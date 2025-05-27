@@ -59,7 +59,11 @@ public class Build {
     }
     for(Vertex<String> neighbor : vertex.neighbors)
     {
-      longestWord(neighbor, set, max);
+      String neighborMax = longestWord(neighbor, set, max);
+      if(neighborMax.length() > max.length())
+      {
+        max = neighborMax;
+      }
     }
     return max;
   }
