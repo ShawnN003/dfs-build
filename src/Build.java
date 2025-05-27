@@ -111,6 +111,10 @@ public class Build {
     return false;
   }
 
+  public static boolean canReach(Airport start, Airport destination, Set<) {
+    return false;
+  }
+
   /**
    * Returns the set of all values in the graph that cannot be reached from the given starting value.
    * The graph is represented as a map where each vertex is associated with a list of its neighboring values.
